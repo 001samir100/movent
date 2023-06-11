@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 
 const Navbar = () => {
 	const navigate = useNavigate();
@@ -38,6 +39,13 @@ const Navbar = () => {
 				</h1>
 			</div>
 			<div className="flex flex-row justify-center items-center">
+				{/* <div>
+					<input type="checkbox" id="checkbox" />
+					<label htmlFor="checkbox">
+						<BsFillMoonFill />
+						<BsFillSunFill />
+					</label>
+				</div> */}
 				{/* day night icon */}
 				<label className="swap swap-rotate mr-5">
 					{/* this hidden checkbox controls the state */}
